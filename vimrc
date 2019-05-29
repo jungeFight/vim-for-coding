@@ -51,6 +51,30 @@ source ~/.vim/setting/vim-easymotion.vim
 source ~/.vim/setting/vim-expand-region.vim
 source ~/.vim/setting/vim-multiple-cursors.vim
 source ~/.vim/setting/vim-quickrun.vim
+source ~/.vim/setting/vim-git.vim
 " 自定义设置
 source ~/.vim/setting/custome.vim
 set runtimepath^=~/.vim/bundle/ag.vim
+
+"鼠标启用
+"set mouse=a
+"设置新文件的编码为 UTF-8
+set encoding=utf-8
+"兼容各平台编码
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+"插入模式下启用回退删除
+set backspace=indent,eol,start
+"基于缩进的代码折叠
+set foldmethod=indent
+"启动 vim 时关闭折叠代码
+set nofoldenable
+"空格折叠快捷键设置
+nnoremap <space> za<CR>
+
+"主题设置
+set t_Co=256
+"let g:molokai_original = 1
+"let g:rehash256 = 1
+"let g:solarized_termcolors=16
+"set background=dark
+colorscheme monokai
